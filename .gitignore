@@ -1,0 +1,417 @@
+# --- IDE Settings ---
+.idea/
+.vs/
+.vscode/
+*.iml
+*.iws
+*.ipr
+out/
+
+# --- Common OS Files ---
+Thumbs.db
+.DS_Store
+
+# --- Java / Maven (Backend) ---
+**/target/
+**/pom.xml.tag
+**/pom.xml.releaseBackup
+**/pom.xml.versionsBackup
+**/pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/
+
+# --- Log files ---
+*.log
+hs_err_pid*
+replay_pid*
+
+# --- Node / React (Frontend) ---
+**/node_modules/
+**/build/
+**/dist/
+.npm
+.eslintcache
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# ============================================================================
+# DHL LRF Project - Root .gitignore
+# ============================================================================
+
+# ============================================================================
+# 🔒 敏感資訊與設定檔
+# ============================================================================
+# 環境變數檔案
+# .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# *.env
+
+# 設定檔（含密碼）
+# **/application-*.properties
+**/application-*.yml
+!**/application-example.properties
+!**/application-example.yml
+
+# 密鑰檔案
+*.key
+*.pem
+*.p12
+*.jks
+secrets/
+
+# ============================================================================
+# ☕ Java / Maven
+# ============================================================================
+# Maven
+**/target/
+**/pom.xml.tag
+**/pom.xml.releaseBackup
+**/pom.xml.versionsBackup
+**/pom.xml.next
+**/release.properties
+**/dependency-reduced-pom.xml
+**/.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+**/.gradle/
+**/build/
+!gradle-wrapper.jar
+
+# 編譯產出
+**/*.class
+**/*.jar
+**/*.war
+**/*.ear
+**/*.nar
+
+# JAR 例外（保留 wrapper）
+!gradle-wrapper.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# ============================================================================
+# 📦 Node.js / React
+# ============================================================================
+# Dependencies
+**/node_modules/
+**/bower_components/
+
+# 建置產出
+**/build/
+**/dist/
+**/.next/
+**/out/
+
+# npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.yarn/
+.pnp.*
+
+# ============================================================================
+# 💻 IDE 設定檔
+# ============================================================================
+# IntelliJ IDEA
+**/.idea/
+**/*.iml
+**/*.iws
+**/*.ipr
+**/out/
+**/.idea_modules/
+
+# Eclipse
+**/.classpath
+**/.project
+**/.settings/
+**/.metadata/
+**/.recommenders/
+**/bin/
+**/tmp/
+**/.externalToolBuilders/
+
+# VS Code
+**/.vscode/
+!**/.vscode/settings.json
+!**/.vscode/tasks.json
+!**/.vscode/launch.json
+!**/.vscode/extensions.json
+**/*.code-workspace
+
+# NetBeans
+**/nbproject/private/
+**/nbbuild/
+**/nbdist/
+**/.nb-gradle/
+
+# ============================================================================
+# 🖥️ 作業系統檔案
+# ============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+
+# ============================================================================
+# 📝 Log 檔案
+# ============================================================================
+# 應用程式 Log
+**/*.log
+**/logs/
+**/*.log.*
+**/*.log.gz
+
+# Spring Boot Log
+**/spring.log
+**/application.log
+
+# Tomcat
+**/catalina.out
+
+# ============================================================================
+# 🧪 測試相關
+# ============================================================================
+# Test coverage
+**/coverage/
+**/.nyc_output/
+**/test-results/
+**/*.lcov
+
+# Jest
+**/__tests__/__snapshots__/
+
+# ============================================================================
+# 🗃️ 資料庫
+# ============================================================================
+# H2 Database
+**/*.db
+**/*.h2.db
+**/*.mv.db
+**/*.trace.db
+
+# SQLite
+**/*.sqlite
+**/*.sqlite3
+
+# Database backups
+**/*.sql.bak
+**/*.bak
+
+# ============================================================================
+# 📦 快取與暫存檔
+# ============================================================================
+# Maven
+**/.mvn/timing.properties
+
+# npm
+**/.npm
+**/.eslintcache
+
+# Spring Boot
+**/spring-boot-devtools.properties
+
+# Webpack
+**/.cache/
+
+# SonarQube
+**/.sonar/
+**/.scannerwork/
+
+# ============================================================================
+# 🔧 建置工具
+# ============================================================================
+# Build info
+**/build-info.properties
+**/git.properties
+
+# Maven Wrapper
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# ============================================================================
+# 📸 媒體檔案（大型檔案）
+# ============================================================================
+# 影片
+**/*.mp4
+**/*.avi
+**/*.mov
+
+# 圖片（選擇性，視需求調整）
+# **/*.psd
+# **/*.ai
+
+# 壓縮檔（選擇性）
+# **/*.zip
+# **/*.rar
+# **/*.7z
+
+# ============================================================================
+# 📄 文件（選擇性）
+# ============================================================================
+# Office 暫存檔
+**/~$*.doc*
+**/~$*.xls*
+**/~$*.ppt*
+
+# ============================================================================
+# 🚀 部署相關
+# ============================================================================
+# Docker
+**/.dockerignore
+**/docker-compose.override.yml
+
+# Kubernetes
+**/secrets.yaml
+**/secrets.yml
+
+# ============================================================================
+# 🔍 其他
+# ============================================================================
+# Misc
+**/.sass-cache/
+**/connect.lock
+**/libpeerconnection.log
+**/testem.log
+**/typings/
+
+# Optional npm cache directory
+**/.npm
+
+# Optional eslint cache
+**/.eslintcache
+
+# Optional stylelint cache
+**/.stylelintcache
+
+# Microbundle cache
+**/.rpt2_cache/
+**/.rts2_cache_cjs/
+**/.rts2_cache_es/
+**/.rts2_cache_umd/
+
+# Optional REPL history
+**/.node_repl_history
+
+# Output of 'npm pack'
+**/*.tgz
+
+# Yarn Integrity file
+**/.yarn-integrity
+
+# parcel-bundler cache
+**/.cache
+**/.parcel-cache
+
+# Next.js build output
+**/.next
+**/out
+
+# Nuxt.js build / generate output
+**/.nuxt
+**/dist
+
+# Gatsby files
+**/.cache/
+# **/public
+
+# VuePress build output
+**/.vuepress/dist
+
+# Serverless directories
+**/.serverless/
+
+# FuseBox cache
+**/.fusebox/
+
+# DynamoDB Local files
+**/.dynamodb/
+
+# TernJS port file
+**/.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+**/.vscode-test
+
+# yarn v2
+**/.yarn/cache
+**/.yarn/unplugged
+**/.yarn/build-state.yml
+**/.yarn/install-state.gz
+**/.pnp.*
+
+# ============================================================================
+# 📋 專案特定排除
+# ============================================================================
+# 舊程式碼（保留但不追蹤）
+# old_Source/
+
+# 文件草稿
+**/DRAFT_*.md
+**/TODO.md
+
+# 開發筆記
+**/notes/
+**/scratch/
+
+# 備份檔案
+**/*.backup
+**/*.bak
+**/*.tmp
+**/*.temp
+**/*~
+
+# ============================================================================
+# ✅ 例外：必須追蹤的檔案
+# ============================================================================
+# 確保這些檔案會被追蹤
+!.gitkeep
+!.gitignore
+!README.md
+!QUICK_START.md
+!pom.xml
+!package.json
+
+# Maven wrapper（建議保留）
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+!mvnw
+!mvnw.cmd
+
+# ============================================================================
+# 🔚 檔案結尾
+# ============================================================================
